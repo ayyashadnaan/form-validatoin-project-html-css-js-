@@ -57,13 +57,13 @@ const password2Regex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*[\d])(?=.*[\W_]).{8,}$/;
 
     //phone validation
     if(!phoneRegex.test(phnum)){
-        document.getElementById("phone-error").textContent="Enter a valid number.";
+        document.getElementById("phone-error").textContent="Enter a valid Enter a valid 10-digit number (starts with 6-9)..";
         isvalid=false;
     }
 
     //pass-validation
     if(!password1Regex.test(password1)){
-        document.getElementById("password-error").textContent="Enter a valid password.";
+        document.getElementById("password-error").textContent="Password too weak (need Uppercase, Lowercase, Number & Special char).";
         isvalid=false;
 
     }
